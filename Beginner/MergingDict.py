@@ -21,7 +21,8 @@ dict_merged = print(merge(dict1, dict2)) # Output : {'one': 1, 'two': 2, 'three'
 
 dict1 = {'one': 1, 'two': 2, 'three':3}
 dict2 = {'four':4, 'five':5} 
-dict_merged = dict1 | dict2 # or use {**dict1, **dict3}
+dict3 = {'six':6, 'seven':7}
+dict_merged = dict1 | dict2 | dict3 # or use {**dict1, **dict2, **dict3}
 print(dict_merged) # Output : {'one': 1, 'two': 2, 'three':3, 'four':4, 'five':5}
 
 
