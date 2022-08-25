@@ -42,4 +42,7 @@ ct = make_column_transformer(
 )
 
 # Transform the data using the ColumnTransformer object. 
-X_transformed = ct.fit_transform(X) 
+X_transformed = ct.fit_transform(X)
+type(X_transformed[:2])  # Check the type of the transformed data 
+
+"""Output: <class 'numpy.ndarray'>"""
