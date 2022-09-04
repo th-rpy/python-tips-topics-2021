@@ -29,3 +29,8 @@ print(df_1.columns)  # To see the dataframe columns names
 df_2 = df.filter(regex="lab").head()
 print(df_2.columns)  # To see the dataframe columns names
 """Output: Index(['lab1', 'lab2', 'lab3', 'lab4'], dtype='object')"""
+
+# Filter column using like
+df_3 = df.filter(like="en").head()
+print(df_3.columns)  # To see the dataframe columns names
+"""Output: Index(['ml_experience', 'class_attendance'], dtype='object')"""
